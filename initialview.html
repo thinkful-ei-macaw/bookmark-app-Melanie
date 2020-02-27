@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+  <title>Bookmarks App</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Bookmarks</h1>
+        <form id="js-initial-view">
+            
+
+            <button type="submit">Add Bookmark</button>
+             <select id = "filterby">
+               <option>Filter By</option>
+               <option value = "5"><span>&#11088</span><span>&#11088</span><span>&#11088</span><span>&#11088</span><span>&#11088</span></option>
+               <option value = "4"><span>&#11088</span><span>&#11088</span><span>&#11088</span><span>&#11088</span></option>
+               <option value = "3"><span>&#11088</span><span>&#11088</span><span>&#11088</span></option>
+               <option value = "2"><span>&#11088</span><span>&#11088</span></option>
+               <option value = "1"><span>&#11088</span></option>
+             </select>
+
+             
+             <div id="bookmarks" class= "accordion"></div>
+             
+        </form>
+        
+        
+    </div>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="module" src="bookmarks.js"></script>
+</body>
+</html>
